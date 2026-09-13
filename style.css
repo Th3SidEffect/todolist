@@ -35,4 +35,21 @@ input{
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+#maincard{
+    display: flex;
+    flex-direction: row;
+}
+
+#inputdiv{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
 }

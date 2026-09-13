@@ -6,18 +6,36 @@ newtask.addEventListener("click",
     () => {
         if (taskInput.value !== ""){ 
            const input = document.createElement("div");
-           input.style.margin = "10px"
-           input.style.border = "1px solid black";
-           input.style.borderRadius = "5px";
-           input.style.width = "fit-content";
-           input.style.padding = "20px";
-           input.style.backgroundColor = "rgb(230, 230, 230)";
+           const done = document.createElement("button");
+           const mainCard = document.createElement("div");
+           const del = document.createElement("button");
+           mainCard.id = "maincard"
+           del.textContent = "X";
+           del.id = "delete";
+           done.textContent = "✓";
+           input.id = "inputdiv";
            input.textContent = taskInput.value;
-           taskCard.appendChild(input);
+           taskCard.appendChild(mainCard)
+           mainCard.appendChild(input);
+           mainCard.appendChild(done);
+           mainCard.appendChild(del);
            taskInput.value = "";
+
+           done.addEventListener("click", 
+            () => {
+                input.style.textDecoration = "line-through";
+            }
+           )
+
+           del.addEventListener("click", 
+            () => {
+                mainCard.remove();
+            }
+           )
         }
         else{
             alert("Please Enter a Task!");
         }
     }
 )
+
