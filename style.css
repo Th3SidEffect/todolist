@@ -1,0 +1,38 @@
+#addcard{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+}
+
+#newtask{
+    width: fit-content;
+    font-weight: 300;
+    font-family: Inter;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
+input{
+    height: 100px;
+    width: 400px;
+    font-size: 1.3rem;
+    font-family: Inter;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(230, 230, 230);
+}
+
+#taskcard{
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
