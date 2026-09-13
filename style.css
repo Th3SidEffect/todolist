@@ -1,33 +1,59 @@
+body{
+    background-color: hwb(55 68% 0%);
+}
+
+h1{
+    font-family: Bevan;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img{
+    height: 500px;
+    width: 500px;
+}
+
 #addcard{
-    border: 1px solid black;
     width: fit-content;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 94, 0);
+    box-shadow: 8px 8px 0px;
 }
 
 #newtask{
-    width: fit-content;
-    font-weight: 300;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 500;
     font-family: Inter;
-    font-size: 1.3rem;
+    font-size: 1.4em;
     background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
+    border: 2px solid black;
     cursor: pointer;
-    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-input{
+#taskinput{
     height: 100px;
     width: 400px;
     font-size: 1.3rem;
     font-family: Inter;
     font-weight: 500;
     border: none;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 94, 0);
+    color: white;
 }
 
 #taskcard{
@@ -37,7 +63,7 @@ input{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    
 }
 
 #maincard{
@@ -47,9 +73,45 @@ input{
 
 #inputdiv{
     margin: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+    font-family: Inter;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px;
     width: fit-content;
     padding: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(54, 215, 255);
+}
+
+#inputdiv:hover{
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px;
+}
+
+#done{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(153, 255, 0);
+    box-shadow: 5px 5px 0px;
+    border-radius: 15px;
+}
+
+#done:hover{
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px;
+}
+
+#delete{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: none;
+    background-color: red;
+    box-shadow: 5px 5px 0px;
+    border-radius: 15px;
+}
+
+#delete:hover{
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px;
 }

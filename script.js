@@ -12,6 +12,7 @@ newtask.addEventListener("click",
            mainCard.id = "maincard"
            del.textContent = "X";
            del.id = "delete";
+           done.id = "done";
            done.textContent = "✓";
            input.id = "inputdiv";
            input.textContent = taskInput.value;
