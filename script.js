@@ -1,6 +1,7 @@
 const taskInput = document.getElementById("taskinput");
 const newtask = document.getElementById("newtask");
 const taskCard = document.getElementById("taskcard");
+let tasks = [];
 
 newtask.addEventListener("click", 
     () => {
@@ -24,7 +25,9 @@ newtask.addEventListener("click",
 
            done.addEventListener("click", 
             () => {
-                input.style.textDecoration = "line-through";
+                input.style.backgroundColor = "gray";
+                input.style.transform = "translateY(0px)";
+                input.style.boxShadow = "none";
             }
            )
 
