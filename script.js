@@ -2,7 +2,7 @@ const taskInput = document.getElementById("taskinput");
 const newtask = document.getElementById("newtask");
 const taskCard = document.getElementById("taskcard");
 let tasks = [];
-localStorage.clear();
+
 
 
 function oldTaskLoader(task){
@@ -29,6 +29,21 @@ function oldTaskLoader(task){
             input.style.boxShadow = "none";
         }
     )
+
+    del.addEventListener("click", 
+            () => {
+                mainCard.remove();
+                tasks.forEach(task => {
+                    if(task == input.textContent){
+                        const index = tasks.indexOf(task);
+                        if (index !== -1){
+                            tasks.splice(index, 1);
+                            localStorage.setItem("tasks", JSON.stringify(tasks));
+                        }
+                    }
+                })
+            }
+           )
 }
 
 newtask.addEventListener("click", 
@@ -64,6 +79,15 @@ newtask.addEventListener("click",
            del.addEventListener("click", 
             () => {
                 mainCard.remove();
+                tasks.forEach(task => {
+                    if(task == input.textContent){
+                        const index = tasks.indexOf(task);
+                        if (index !== -1){
+                            tasks.splice(index, 1);
+                            localStorage.setItem("tasks", JSON.stringify(tasks));
+                        }
+                    }
+                })
             }
            )
         }
