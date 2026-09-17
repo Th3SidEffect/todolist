@@ -80,7 +80,7 @@ img{
     flex-direction: row;
 }
 
-#inputdiv{
+.inputdiv{
     margin: 10px;
     font-family: Inter;
     border-radius: 15px;
@@ -133,4 +133,32 @@ img{
 #delete:hover{
     transform: translateY(-5px);
     box-shadow: 8px 8px 0px;
+}
+
+#head{
+    display: flex;
+    flex-direction: row;
+}
+
+#counter{
+    background-color: burlywood;
+    width: 80px;
+    text-align: center;
+    box-shadow: 5px 5px 0px;
+    border-radius: 15px;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#clear-completed{
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.4em;
 }

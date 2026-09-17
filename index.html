@@ -16,10 +16,16 @@
     
     <div id="main">
         <div id="mainin">
-            <h1>To-do List</h1>
+            <div id="head">
+                <h1>To-do List</h1>
+                <h1 id="counter">5</h1>
+            </div>
             <div id="addcard">
                 <input type="text" placeholder="Enter Task " id="taskinput">
-                <button id="newtask">+</button>
+                <div id="buttons">
+                    <button id="newtask">+</button>
+                    <button id="clear-completed">Clear Completed 🗑️</button>
+                </div>
             </div>
             <div id="taskcard"></div>
         </div>
