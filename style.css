@@ -8,16 +8,18 @@ h1{
     margin: 20px;
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start; 
     justify-content: space-evenly;
 }
 
-img{
+img {
     height: 500px;
     width: 500px;
+    position: sticky;
+    top: 20px;
 }
 
 #addcard{
