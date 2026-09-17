@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "todolist0017",
     "public": ".",
     "ignore": [
       "firebase.json",
